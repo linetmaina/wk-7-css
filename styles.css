@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: emeraldgreen;
+  background-color: #046307; /* Emerald green */
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #034d05;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  color: #aaf0d1; /* Mint */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #aaf0d1;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  color: #aaf0d1;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #aaf0d1;
+  color: #034d05;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+/* Products */
+#products {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-card {
+  background: white;
+  color: #034d05;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #aaf0d1;
+  color: #034d05;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.product-card button:hover {
+  background: #034d05;
+  color: white;
+}
+
+/* Signup Form */
+#signup {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+
+form input, form button {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+form input {
+  border: 1px solid #aaf0d1;
+}
+
+form button {
+  background: #aaf0d1;
+  color: #034d05;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: white;
+}
+
+#form-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #034d05;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  color: #aaf0d1;
+}
